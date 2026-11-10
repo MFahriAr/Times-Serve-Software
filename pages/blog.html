@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="../css/style.css?v=16">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body class="antialiased flex flex-col min-h-screen bg-slate-50">
+<body class="antialiased flex flex-col min-h-screen bg-slate-50 overflow-x-hidden">
     <header class="w-full bg-[#040818]/90 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
-        <div class="container mx-auto px-4 md:px-8 lg:px-16 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16 py-3 flex justify-between items-center">
             <!-- Logo -->
             <a href="../index.html" class="flex items-center">
                 <img src="../images/logo.png" alt="TSS Logo" class="h-10 md:h-12 w-auto brightness-110">
@@ -33,7 +33,7 @@
             </div>
             
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="md:hidden p-2 text-white transition" aria-label="Menu navigasi">
+            <button id="menu-btn" class="md:hidden p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center text-white transition" aria-label="Menu navigasi">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
@@ -53,20 +53,643 @@
 
     <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="py-20 text-center hero-3d-bg">
-            <div class="container mx-auto px-4">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Blog &amp; Aktivitas Implementasi</h1>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+        <section class="py-14 sm:py-16 md:py-20 text-center hero-3d-bg">
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white leading-tight">Blog &amp; Aktivitas Implementasi</h1>
+                <p class="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                     Dokumentasi pelatihan, sosialisasi, dan aktivasi sistem SIMKaD langsung bersama pemerintah daerah dan perangkat desa di berbagai wilayah Indonesia.
                 </p>
             </div>
         </section>
 
-        <!-- Blog Cards Section -->
-        <section class="py-20">
-            <div class="container mx-auto px-4 md:px-8 lg:px-16">
+        <!-- Section: Bukti Foto Aktivasi di Berbagai Kabupaten -->
+        <section class="py-12 sm:py-16 md:py-20 bg-white border-b border-slate-200/80">
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
+                <div class="mb-8 sm:mb-10 md:mb-12">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-2">
+                        Bukti Foto Aktivasi di Berbagai Kabupaten
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        Dokumentasi instalasi, konfigurasi, dan serah terima lisensi SIMKaD di berbagai kantor balai desa dan pemerintah kabupaten se-Indonesia.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Card Foto 1: Kabupaten Bengkalis Riau -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up">
+                        <a href="../images/aktivasi/Bengkalis%20(7).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/Bengkalis%20(7).jpg" alt="Aktivasi SIMKaD Kabupaten Bengkalis Provinsi Riau" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Bengkalis, Riau
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/Bengkalis%20(7).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Bengkalis, Provinsi Riau
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Implementasi dan aktivasi SIMKaD untuk mempercepat pelayanan administrasi kependudukan desa secara mandiri dan tertib di wilayah Kabupaten Bengkalis.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/Bengkalis%20(7).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 2: Kabupaten Blitar Jawa Timur -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="50">
+                        <a href="../images/aktivasi/BLITAR%20(3).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/BLITAR%20(3).jpg" alt="Aktivasi SIMKaD Kabupaten Blitar Provinsi Jawa Timur" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Blitar, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/BLITAR%20(3).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Blitar, Provinsi Jawa Timur
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Aktivasi sistem dan pendampingan operator balai desa di Kabupaten Blitar guna mempermudah pembuatan surat menyurat warga dalam hitungan detik.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/BLITAR%20(3).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 3: Kabupaten Bojonegoro Jawa Timur -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="100">
+                        <a href="../images/aktivasi/BOJONEGORO%20(10).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/BOJONEGORO%20(10).jpg" alt="Aktivasi SIMKaD Kabupaten Bojonegoro Provinsi Jawa Timur" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Bojonegoro, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/BOJONEGORO%20(10).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Bojonegoro, Provinsi Jawa Timur
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Proses setup database kependudukan desa dan aktivasi lisensi SIMKaD untuk tata kelola administrasi pemerintahan desa yang lebih akurat.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/BOJONEGORO%20(10).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 4: Kabupaten Bone Sulawesi Selatan -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up">
+                        <a href="../images/aktivasi/BONE%20SULAWESI%20(21).JPG" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/BONE%20SULAWESI%20(21).JPG" alt="Aktivasi SIMKaD Kabupaten Bone Provinsi Sulawesi Selatan" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Bone, Sulsel
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/BONE%20SULAWESI%20(21).JPG" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Bone, Provinsi Sulawesi Selatan
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Serah terima aktivasi software SIMKaD bersama jajaran perangkat desa di Kabupaten Bone untuk modernisasi layanan publik desa.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/BONE%20SULAWESI%20(21).JPG" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 5: Kabupaten Cirebon Jawa Barat -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="50">
+                        <a href="../images/aktivasi/CIREBON%20(25).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/CIREBON%20(25).jpg" alt="Aktivasi SIMKaD Kabupaten Cirebon Provinsi Jawa Barat" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Cirebon, Jabar
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/CIREBON%20(25).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Cirebon, Provinsi Jawa Barat
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Penerapan operasional SIMKaD di kantor desa Kabupaten Cirebon demi efisiensi registrasi warga dan pencetakan dokumen kependudukan resmi.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/CIREBON%20(25).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 6: Jayapura Papua -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="100">
+                        <a href="../images/aktivasi/JAYAPURA%20(59).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/JAYAPURA%20(59).jpg" alt="Aktivasi SIMKaD Jayapura Provinsi Papua" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Jayapura, Papua
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Kampung / Kelurahan</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/JAYAPURA%20(59).jpg" target="_blank" rel="noopener noreferrer">
+                                    Jayapura, Provinsi Papua
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Bukti keandalan aktivasi SIMKaD hingga wilayah Papua, mendukung aparatur kampung mengelola data kependudukan secara cepat dan stabil.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/JAYAPURA%20(59).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 7: Kabupaten Kolaka Sulawesi Tenggara -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up">
+                        <a href="../images/aktivasi/KOLAKA%20UTARA%20(1).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/KOLAKA%20UTARA%20(1).jpg" alt="Aktivasi SIMKaD Kabupaten Kolaka Provinsi Sulawesi Tenggara" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Kolaka, Sultra
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/KOLAKA%20UTARA%20(1).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Kolaka, Provinsi Sulawesi Tenggara
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Aktivasi sistem SIMKaD versi mandiri di Kabupaten Kolaka, mengoptimalkan pelayanan warga desa tanpa kendala jaringan internet.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/KOLAKA%20UTARA%20(1).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 8: Kabupaten Luwu Utara Sulawesi Selatan -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="50">
+                        <a href="../images/aktivasi/LUWU%20UTARA%20(7).jpeg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/LUWU%20UTARA%20(7).jpeg" alt="Aktivasi SIMKaD Kabupaten Luwu Utara Provinsi Sulawesi Selatan" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Luwu Utara, Sulsel
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/LUWU%20UTARA%20(7).jpeg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Luwu Utara, Provinsi Sulawesi Selatan
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Dokumentasi keberhasilan aktivasi SIMKaD bersama pemerintah desa di Luwu Utara untuk kerapian arsip dan transparansi pelayanan warga.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/LUWU%20UTARA%20(7).jpeg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 9: Kabupaten Mojokerto Jawa Timur -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="100">
+                        <a href="../images/aktivasi/MOJOKERTO%20KAB.jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/MOJOKERTO%20KAB.jpg" alt="Aktivasi SIMKaD Kabupaten Mojokerto Provinsi Jawa Timur" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Mojokerto, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/MOJOKERTO%20KAB.jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Mojokerto, Provinsi Jawa Timur
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Instalasi dan aktivasi SIMKaD di lingkungan balai desa Kabupaten Mojokerto, mempercepat proses penerbitan surat dan laporan mutasi warga.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/MOJOKERTO%20KAB.jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 10: Kabupaten PALI Sumatera Selatan -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up">
+                        <a href="../images/aktivasi/PALI%20SUMATRA%20(32).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/PALI%20SUMATRA%20(32).jpg" alt="Aktivasi SIMKaD Kabupaten Penukal Abab Lematang Ilir (PALI) Provinsi Sumatera Selatan" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    PALI, Sumsel
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/PALI%20SUMATRA%20(32).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Penukal Abab Lematang Ilir (PALI), Provinsi Sumatera Selatan
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Aktivasi SIMKaD di Kabupaten PALI Sumatera Selatan untuk transformasi digital tata kelola data desa yang tertib, cepat, dan terintegrasi.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/PALI%20SUMATRA%20(32).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 11: Kabupaten Pulang Pisau Kalimantan Tengah -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="50">
+                        <a href="../images/aktivasi/PULANG%20PISAU%20(6).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/PULANG%20PISAU%20(6).jpg" alt="Aktivasi SIMKaD Kabupaten Pulang Pisau Provinsi Kalimantan Tengah" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Pulang Pisau, Kalteng
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/PULANG%20PISAU%20(6).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Pulang Pisau, Provinsi Kalimantan Tengah
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Pengoperasian dan verifikasi aktivasi sistem SIMKaD di Kalimantan Tengah, menghadirkan kemudahan pelayanan surat bagi masyarakat pelosok desa.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/PULANG%20PISAU%20(6).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 12: Kabupaten Sumba Barat Daya NTT -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up" data-aos-delay="100">
+                        <a href="../images/aktivasi/SUMBA%20BARAT%20DAYA%20(25).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/SUMBA%20BARAT%20DAYA%20(25).jpg" alt="Aktivasi SIMKaD Kabupaten Sumba Barat Daya Provinsi Nusa Tenggara Timur" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Sumba Barat Daya, NTT
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/SUMBA%20BARAT%20DAYA%20(25).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Sumba Barat Daya, Provinsi Nusa Tenggara Timur
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Dokumentasi penerapan sistem informasi kependudukan desa SIMKaD di wilayah Nusa Tenggara Timur yang berjalan lancar dan mudah dioperasikan.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/SUMBA%20BARAT%20DAYA%20(25).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card Foto 13: Kabupaten Tuban Jawa Timur -->
+                    <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-aos="fade-up">
+                        <a href="../images/aktivasi/TUBAN%20(34).jpg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/aktivasi/TUBAN%20(34).jpg" alt="Aktivasi SIMKaD Kabupaten Tuban Provinsi Jawa Timur" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent opacity-75 group-hover:opacity-50 transition-opacity"></div>
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                    Foto Aktivasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Tuban, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/90 text-slate-900 flex items-center justify-center shadow-md">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Aktivasi Sistem</span>
+                                <span>&bull;</span>
+                                <span>Pemerintahan Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="../images/aktivasi/TUBAN%20(34).jpg" target="_blank" rel="noopener noreferrer">
+                                    Kabupaten Tuban, Provinsi Jawa Timur
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Aktivasi serta pendampingan langsung tim SIMKaD di Kabupaten Tuban sebagai basis percontohan tata kelola desa berbasis teknologi digital.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="../images/aktivasi/TUBAN%20(34).jpg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                                    Lihat Foto Dokumentasi
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Video Dokumentasi Lapangan -->
+        <section class="py-12 sm:py-16 md:py-20 bg-slate-50/50">
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
+                <div class="mb-8 sm:mb-10 md:mb-12">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-2">
+                        Video Dokumentasi &amp; Pelatihan Lapangan
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        Rekaman video bimbingan teknis, sosialisasi, dan presentasi sistem SIMKaD bersama aparatur pemerintah daerah yang dapat disaksikan langsung di YouTube.
+                    </p>
+                </div>
+
                 <!-- Grid Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="blog-grid">
                     
                     <!-- Card 1 -->
                     <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="pelatihan" data-aos="fade-up">
@@ -449,20 +1072,20 @@
         </section>
 
         <!-- Bottom CTA -->
-        <section class="py-20 bg-slate-900 text-white border-t border-slate-800">
-            <div class="container mx-auto px-4 md:px-8 lg:px-16 text-center max-w-4xl">
+        <section class="py-14 sm:py-16 md:py-20 bg-slate-900 text-white border-t border-slate-800">
+            <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-16 text-center max-w-4xl">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-400/20 mb-4">
                     Transformasi Digital Desa
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight">Siap Menerapkan SIMKaD di Wilayah Anda?</h2>
-                <p class="text-slate-300 text-base md:text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
-                    Bergabunglah bersama puluhan desa dan pemerintah daerah yang telah menikmati kemudahan administrasi kependudukan modern, tertib, dan transparan.
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-3 sm:mb-4 tracking-tight">Siap Menerapkan SIMKaD di Wilayah Anda?</h2>
+                <p class="text-slate-300 text-sm sm:text-base md:text-lg mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto px-2">
+                    Bergabunglah bersama berbagai desa dan pemerintah daerah yang telah merasakan kemudahan administrasi kependudukan modern, tertib, dan transparan.
                 </p>
-                <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a href="kontak.html" class="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all shadow-lg hover:shadow-blue-500/25">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full max-w-md mx-auto sm:max-w-none">
+                    <a href="kontak.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all shadow-lg hover:shadow-blue-500/25">
                         Konsultasi &amp; Demo Sistem
                     </a>
-                    <a href="produk.html" class="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-semibold text-sm transition-all">
+                    <a href="produk.html" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-semibold text-sm transition-all">
                         Pelajari Fitur SIMKaD
                     </a>
                 </div>
@@ -637,6 +1260,23 @@
     .social-icon.copy-link:hover {
       background: #2563EB;
       color: white;
+    }
+    @media (max-width: 640px) {
+      .tooltip-container {
+        bottom: 16px;
+        right: 16px;
+        transform: scale(0.7);
+      }
+      .tooltip-content {
+        left: auto;
+        right: 0;
+        transform: scale(0.85);
+        transform-origin: bottom right;
+      }
+      .tooltip-container:hover .tooltip-content,
+      .tooltip-container.active .tooltip-content {
+        transform: scale(1);
+      }
     }
     </style>
 </body>
