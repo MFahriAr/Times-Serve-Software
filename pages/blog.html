@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog &amp; Dokumentasi Lapangan - Time Saver Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/style.css?v=16">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="antialiased flex flex-col min-h-screen bg-slate-50">
+    <header class="w-full bg-[#040818]/90 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="../index.html" class="flex items-center">
+                <img src="../images/logo.png" alt="TSS Logo" class="h-10 md:h-12 w-auto brightness-110">
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex gap-8 items-center text-sm font-medium">
+                <a href="../index.html" class="text-white hover:text-blue-400 transition">Beranda</a>
+                <a href="tentang-kami.html" class="text-white hover:text-blue-400 transition">Tentang Kami</a>
+                <a href="layanan.html" class="text-white hover:text-blue-400 transition">Layanan</a>
+                <a href="produk.html" class="text-white hover:text-blue-400 transition">Produk</a>
+                <a href="blog.html" class="text-blue-400 font-semibold">Blog</a>
+                <a href="insight.html" class="text-white hover:text-blue-400 transition">Insight</a>
+                <a href="kontak.html" class="text-white hover:text-blue-400 transition">Kontak</a>
+            </nav>
+            
+            <!-- CTA -->
+            <div class="hidden md:block">
+                <a href="mulai-project.html" class="btn-nav">Mulai Project</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden p-2 text-white transition" aria-label="Menu navigasi">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 space-y-3 bg-[#040818] border-t border-slate-800 text-white">
+            <a href="../index.html" class="block py-2 text-white hover:text-blue-400">Beranda</a>
+            <a href="tentang-kami.html" class="block py-2 text-white hover:text-blue-400">Tentang Kami</a>
+            <a href="layanan.html" class="block py-2 text-white hover:text-blue-400">Layanan</a>
+            <a href="produk.html" class="block py-2 text-white hover:text-blue-400">Produk</a>
+            <a href="blog.html" class="block py-2 text-blue-400 font-semibold">Blog</a>
+            <a href="insight.html" class="block py-2 text-white hover:text-blue-400">Insight</a>
+            <a href="kontak.html" class="block py-2 text-white hover:text-blue-400">Kontak</a>
+            <a href="mulai-project.html" class="block text-center mt-2 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold">Mulai Project</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-20 text-center hero-3d-bg">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white">Blog &amp; Aktivitas Implementasi</h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Dokumentasi pelatihan, sosialisasi, dan aktivasi sistem SIMKaD langsung bersama pemerintah daerah dan perangkat desa di berbagai wilayah Indonesia.
+                </p>
+            </div>
+        </section>
+
+        <!-- Blog Cards Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 md:px-8 lg:px-16">
+                <!-- Grid Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
+                    
+                    <!-- Card 1 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="pelatihan" data-aos="fade-up">
+                        <a href="https://youtu.be/vadXuHYG5Cg?si=YFo-3aoPl4IPjPB3" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/JAYAPURA (31).jpg" alt="Pelatihan SIMKaD di Jayapura" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Jayapura, Papua
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Pelatihan &amp; Bimtek</span>
+                                <span>&bull;</span>
+                                <span>Aparatur Daerah</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/vadXuHYG5Cg?si=YFo-3aoPl4IPjPB3" target="_blank" rel="noopener noreferrer">
+                                    Pelatihan SIMKaD di Jayapura
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Dokumentasi bimbingan teknis dan pelatihan intensif pengoperasian sistem informasi kependudukan desa bersama jajaran aparatur daerah di Jayapura, Papua.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/vadXuHYG5Cg?si=YFo-3aoPl4IPjPB3" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="pelatihan" data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://youtu.be/Zkbm-0eF1bo?si=BqwWkGNGCxEgUDXy" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/BONE SULAWESI (21).JPG" alt="Pelatihan SIMKaD di Kab. Tangerang Jawa Barat" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Kab. Tangerang, Jabar
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Pelatihan &amp; Bimtek</span>
+                                <span>&bull;</span>
+                                <span>Kecamatan &amp; Desa</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/Zkbm-0eF1bo?si=BqwWkGNGCxEgUDXy" target="_blank" rel="noopener noreferrer">
+                                    Pelatihan SIMKaD di Kab. Tangerang Jawa Barat
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Kegiatan pelatihan dan bimbingan teknis implementasi SIMKaD bagi aparatur desa di Kabupaten Tangerang guna memodernisasi layanan administrasi warga.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/Zkbm-0eF1bo?si=BqwWkGNGCxEgUDXy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="pemkab" data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://youtu.be/7-zxysD7CTY?si=1g7xhS3F2ItaoBa0" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/TUBAN (34).jpg" alt="SIMKaD di PemKab Tuban Jatim" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Tuban, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Pemkab &amp; Sosialisasi</span>
+                                <span>&bull;</span>
+                                <span>Pemerintah Kabupaten</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/7-zxysD7CTY?si=1g7xhS3F2ItaoBa0" target="_blank" rel="noopener noreferrer">
+                                    SIMKaD di PemKab Tuban Jatim
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Koordinasi dan sosialisasi implementasi SIMKaD bersama jajaran Pemkab Tuban dalam rangka integrasi satu data kependudukan desa se-kabupaten.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/7-zxysD7CTY?si=1g7xhS3F2ItaoBa0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="pemkab" data-aos="fade-up">
+                        <a href="https://youtu.be/Z0bN2iOOI_k?si=ibpCvPdrRBGOufsg" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/MOJOKERTO KOTA (23).jpg" alt="Presentasi SIMKaD" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-blue-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Mojokerto Kota
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-blue-600">Pemkab &amp; Sosialisasi</span>
+                                <span>&bull;</span>
+                                <span>Presentasi Sistem</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/Z0bN2iOOI_k?si=ibpCvPdrRBGOufsg" target="_blank" rel="noopener noreferrer">
+                                    Presentasi SIMKaD
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Sesi presentasi fitur komprehensif, arsitektur sistem, serta kemudahan administrasi surat digital SIMKaD kepada pimpinan dan pengambil kebijakan daerah.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/Z0bN2iOOI_k?si=ibpCvPdrRBGOufsg" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="aktivasi" data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://youtu.be/ZJss_fsZjQw?si=gph5Nm3eEiM2fwj6" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/MOJOKERTO KABUPATEN (8).jpg" alt="Konfirmasi Aktivasi SIMKaD Versi Offline Desa Semen Kab. Mojokerto" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Mojokerto, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-emerald-600">Aktivasi Desa</span>
+                                <span>&bull;</span>
+                                <span>Versi Offline</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/ZJss_fsZjQw?si=gph5Nm3eEiM2fwj6" target="_blank" rel="noopener noreferrer">
+                                    Konfirmasi Aktivasi SIMKaD Versi Offline Desa Semen Kab. Mojokerto
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Serah terima lisensi dan konfirmasi keberhasilan operasional sistem SIMKaD offline di Balai Desa Semen, Kabupaten Mojokerto yang berjalan stabil dan mandiri.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/ZJss_fsZjQw?si=gph5Nm3eEiM2fwj6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="aktivasi" data-aos="fade-up" data-aos-delay="200">
+                        <a href="https://youtu.be/qxbN7EkULTI?si=yr2br312yAzfqAOu" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/KOLAKA UTARA (13).jpg" alt="Konfirmasi Aktivasi SIMKaD Versi Offline Desa Ponggiha Kab. Kolaka Utara" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Kolaka Utara, Sultra
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-emerald-600">Aktivasi Desa</span>
+                                <span>&bull;</span>
+                                <span>Versi Offline</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/qxbN7EkULTI?si=yr2br312yAzfqAOu" target="_blank" rel="noopener noreferrer">
+                                    Konfirmasi Aktivasi SIMKaD Versi Offline, Desa Ponggiha Kab. Kolaka Utara
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Implementasi nyata dan aktivasi sukses SIMKaD di Desa Ponggiha, Sulawesi Tenggara, membuktikan kemudahan integrasi sistem di luar pulau Jawa.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/qxbN7EkULTI?si=yr2br312yAzfqAOu" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="aktivasi" data-aos="fade-up">
+                        <a href="https://youtu.be/6ZpeSUCUaQA?si=xiPAGHdzFla68QMT" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/TUBAN (79).jpg" alt="Konfirmasi Aktivasi SIMKaD Versi Offline Desa Menilo Tuban Jatim" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Tuban, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-emerald-600">Aktivasi Desa</span>
+                                <span>&bull;</span>
+                                <span>Versi Offline</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/6ZpeSUCUaQA?si=xiPAGHdzFla68QMT" target="_blank" rel="noopener noreferrer">
+                                    Konfirmasi Aktivasi SIMKaD Versi Offline, Desa Menilo Tuban Jatim
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Dokumentasi pendampingan teknis dan verifikasi aktivasi operasional SIMKaD di Desa Menilo, Tuban untuk mempercepat pencetakan surat administrasi warga.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/6ZpeSUCUaQA?si=xiPAGHdzFla68QMT" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="blog-card bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group" data-category="aktivasi" data-aos="fade-up" data-aos-delay="100">
+                        <a href="https://youtu.be/wPYTBuR0DK0?si=M55GA5jthyM8IEyO" target="_blank" rel="noopener noreferrer" class="relative block overflow-hidden aspect-[16/10] bg-slate-900 group">
+                            <img src="../images/BLITAR (5).jpg" alt="Konfirmasi Aktivasi SIMKaD Versi Offline Desa Kenongosari Tuban Jatim" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                            
+                            <div class="absolute top-3 left-3">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
+                                    <svg class="w-3 h-3 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Video Dokumentasi
+                                </span>
+                            </div>
+                            <div class="absolute top-3 right-3">
+                                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-600/90 backdrop-blur-md text-white shadow-xs">
+                                    Tuban, Jatim
+                                </span>
+                            </div>
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                                    <svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-2 text-xs text-slate-500">
+                                <span class="font-semibold text-emerald-600">Aktivasi Desa</span>
+                                <span>&bull;</span>
+                                <span>Versi Offline</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition-colors leading-snug mb-3">
+                                <a href="https://youtu.be/wPYTBuR0DK0?si=M55GA5jthyM8IEyO" target="_blank" rel="noopener noreferrer">
+                                    Konfirmasi Aktivasi SIMKaD Versi Offline Desa Kenongosari Tuban Jatim
+                                </a>
+                            </h3>
+                            <p class="text-sm text-slate-600 leading-relaxed mb-5 flex-grow">
+                                Rekaman aktivasi langsung SIMKaD di Desa Kenongosari, Tuban, memastikan database kependudukan siap mendukung pelayanan desa yang cepat, transparan, dan akurat.
+                            </p>
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
+                                <a href="https://youtu.be/wPYTBuR0DK0?si=M55GA5jthyM8IEyO" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-red-600 hover:text-red-700 transition-colors">
+                                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                                    Tonton di YouTube
+                                </a>
+                                <span class="text-[11px] text-slate-400 font-medium">Buka Tab Baru &rarr;</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom CTA -->
+        <section class="py-20 bg-slate-900 text-white border-t border-slate-800">
+            <div class="container mx-auto px-4 md:px-8 lg:px-16 text-center max-w-4xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-400/20 mb-4">
+                    Transformasi Digital Desa
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight">Siap Menerapkan SIMKaD di Wilayah Anda?</h2>
+                <p class="text-slate-300 text-base md:text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+                    Bergabunglah bersama puluhan desa dan pemerintah daerah yang telah menikmati kemudahan administrasi kependudukan modern, tertib, dan transparan.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <a href="kontak.html" class="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm transition-all shadow-lg hover:shadow-blue-500/25">
+                        Konsultasi &amp; Demo Sistem
+                    </a>
+                    <a href="produk.html" class="inline-flex items-center justify-center px-8 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-semibold text-sm transition-all">
+                        Pelajari Fitur SIMKaD
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 pt-8 pb-4 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div class="col-span-1 md:col-span-5">
+                <div class="mb-3">
+                    <img src="../images/logo.png" alt="TSS Logo" class="h-14 w-auto invert grayscale brightness-200 opacity-90">
+                </div>
+                <p class="text-gray-400 max-w-sm text-sm leading-relaxed">
+                    Time Saver Software adalah partner teknologi yang membantu mengubah kebutuhan dan masalah menjadi solusi digital yang efektif, relevan, dan dapat berkembang.
+                </p>
+            </div>
+            <div class="col-span-1 md:col-span-3">
+                <h4 class="text-white font-bold text-sm mb-3">Perusahaan</h4>
+                <ul class="flex flex-col gap-2 text-sm text-gray-400">
+                    <li><a href="tentang-kami.html" class="hover:text-white transition">Tentang Kami</a></li>
+                    <li><a href="layanan.html" class="hover:text-white transition">Layanan</a></li>
+                    <li><a href="produk.html" class="hover:text-white transition">Produk</a></li>
+                    <li><a href="blog.html" class="text-blue-400 font-medium">Blog</a></li>
+                    <li><a href="insight.html" class="hover:text-white transition">Insight &amp; Artikel</a></li>
+                </ul>
+            </div>
+            <div class="col-span-1 md:col-span-4">
+                <h4 class="text-white font-bold text-sm mb-3">Hubungi Kami</h4>
+                <div class="flex flex-col gap-2 text-gray-400 text-sm">
+                    <a href="mailto:timerservesoftware@gmail.com" class="flex items-center gap-2 hover:text-white transition">
+                        <svg class="w-4 h-4 flex-shrink-0 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span class="truncate">timerservesoftware@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/6285804203747" target="_blank" class="flex items-center gap-2 hover:text-white transition">
+                        <svg class="w-4 h-4 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>0858-0420-3747</span>
+                    </a>
+                    <a href="https://wa.me/6281357798999" target="_blank" class="flex items-center gap-2 hover:text-white transition">
+                        <svg class="w-4 h-4 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>0813-5779-8999</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 md:px-8 lg:px-16 mt-6 pt-4 border-t border-gray-800 text-xs text-gray-500 text-center">
+            <p>&copy; 2026 Time Saver Software (TSS). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: true,
+            offset: 50
+        });
+    </script>
+    <script src="../js/script.js?v=16"></script>
+
+    <!-- Floating Share Widget -->
+    <div class="tooltip-container" id="share-tooltip-container">
+        <div class="button-content" onclick="toggleShareMenu(event)">
+            <span class="text">Share</span>
+            <svg class="share-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92c0-1.61-1.31-2.92-2.92-2.92zM18 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM6 13c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm12 7.02c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path>
+            </svg>
+        </div>
+        <div class="tooltip-content">
+            <div class="social-icons">
+                <a href="#" onclick="shareToWhatsApp(event)" class="social-icon whatsapp" title="Bagikan ke WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.33C9.37 7.33 9.1 7.39 8.87 7.64C8.65 7.89 8.02 8.48 8.02 9.7C8.02 10.92 8.91 12.1 9.03 12.26C9.15 12.42 10.76 14.91 13.23 15.97C15.29 16.86 15.71 16.68 16.16 16.64C16.61 16.6 17.62 16.04 17.83 15.45C18.04 14.86 18.04 14.36 17.98 14.25C17.92 14.14 17.76 14.08 17.5 13.95C17.24 13.82 15.99 13.21 15.76 13.12C15.53 13.03 15.37 12.99 15.21 13.23C15.05 13.48 14.58 14.04 14.44 14.2C14.3 14.36 14.16 14.38 13.9 14.25C13.64 14.12 12.82 13.85 11.84 12.98C11.08 12.3 10.57 11.46 10.42 11.21C10.27 10.96 10.4 10.82 10.53 10.7C10.65 10.58 10.79 10.39 10.93 10.23C11.07 10.07 11.11 9.95 11.2 9.79C11.29 9.63 11.25 9.49 11.19 9.36C11.13 9.23 10.66 8.08 10.47 7.61C10.28 7.15 10.09 7.22 9.94 7.21C9.8 7.2 9.67 7.2 9.53 7.2V7.33Z"/>
+                    </svg>
+                </a>
+                <a href="#" onclick="shareToInstagram(event)" class="social-icon instagram" title="Buka Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+                <a href="#" onclick="copyPageLink(event)" class="social-icon copy-link" title="Salin Link Website">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    /* Tooltip styles */
+    .tooltip-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      transform: scale(0.75);
+      transform-origin: bottom right;
+      z-index: 9999;
+      display: inline-block;
+      font-family: Arial, sans-serif;
+    }
+    .button-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 10;
+    }
+    .text {
+      font-size: 18px;
+      font-weight: 600;
+      margin-right: 12px;
+      white-space: nowrap;
+    }
+    .share-icon {
+      fill: white;
+    }
+    .tooltip-content {
+      position: absolute;
+      bottom: 120%;
+      left: 50%;
+      transform: translateX(-50%) scale(0.8);
+      border-radius: 15px;
+      padding: 22px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+      z-index: 100;
+      pointer-events: none;
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.95);
+    }
+    .tooltip-container:hover .tooltip-content,
+    .tooltip-container.active .tooltip-content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) scale(1);
+      pointer-events: auto;
+    }
+    .social-icons {
+      display: flex;
+      gap: 12px;
+    }
+    .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #f1f5f9;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .social-icon:hover {
+      transform: translateY(-3px);
+    }
+    .social-icon.whatsapp:hover {
+      background: #25D366;
+      color: white;
+    }
+    .social-icon.instagram:hover {
+      background: #E1306C;
+      color: white;
+    }
+    .social-icon.copy-link:hover {
+      background: #2563EB;
+      color: white;
+    }
+    </style>
+</body>
+</html>
